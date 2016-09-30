@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, Text } from 'react-native';
+import { AppRegistry } from 'react-native';
 import * as Redux from 'redux';
 import * as ReactRedux from 'react-redux';
 const { Provider } = ReactRedux;
