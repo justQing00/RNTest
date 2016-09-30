@@ -1,4 +1,4 @@
-import { Toast } from 'antd-mobile';
+import { Toast } from 'antd-mobile/lib/toast';
 import { getMessage } from './messages';
 import _ from 'lodash';
 
