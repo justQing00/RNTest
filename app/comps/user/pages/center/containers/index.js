@@ -1,3 +1,18 @@
 import PureCenter from '../components';
+import * as ReactRedux from 'react-redux';
 
-export default PureCenter;
+const mapStateToProps = (state, ownProps) => {
+  return {
+
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+
+  };
+};
+
+export default ReactRedux.connect(mapStateToProps, mapDispatchToProps)(PureCenter);
+
+
