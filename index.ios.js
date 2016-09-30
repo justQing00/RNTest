@@ -1,5 +1,5 @@
-
-import { AppRegistry } from 'react-native';
+import React from 'react';
+import { AppRegistry, Text } from 'react-native';
 import * as Redux from 'redux';
 import * as ReactRedux from 'react-redux';
 const { Provider } = ReactRedux;
@@ -13,14 +13,12 @@ const store = Redux.createStore(reducers, Redux.compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 ));
 
-class Root extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <UserCenter />
-      </Provider>
-    )
-  }
+const Main = () => {
+  return (
+    <Provider store={store}>
+      <UserCenter/>
+    </Provider>
+  )
 }
 
-AppRegistry.registerComponent('RNTest', () => Root);
+AppRegistry.registerComponent('RNTest', () => Main);
