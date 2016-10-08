@@ -5,10 +5,11 @@ import { styles } from './style';
 
 class Center extends React.Component {
   render() {
+    const { user } = this.props
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {user} Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
